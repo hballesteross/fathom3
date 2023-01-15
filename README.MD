@@ -1,9 +1,9 @@
 # Instrucciones
 
-- La app esta montada en un contenedor con una imagen de node y otra de postgre.
+- La app esta montada en un contenedor con una imagen de node y otra de postgresql.
 
-
-1) correr docker-compose up
+1) renombrar .env.example a .env y generar un string para JWTSecret
+2) correr docker-compose up
 
 Esto creara las imagenes y levantara el contenedor. Una vez que este corriendo se debe ejecutar en la consola de la app de node:
 
