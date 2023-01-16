@@ -26,10 +26,13 @@ COPY . .
 # Install package.json dependencies
 RUN npm install
 
+# install prisma globaly 
+
+RUN npm install -g prisma
 # Generate Prisma client.
 RUN npx prisma generate
 
 # Run and expose the server on port 3000
 EXPOSE 3000
 ENV PORT 3000
-CMD [ "npm", "run", "dev"]
+CMD [ "npm", "run", "start"]
